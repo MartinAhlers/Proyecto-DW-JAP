@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundFeels</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+	<script src="assets/script.js"></script>
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+
+
+</head>
+<body>
+<div id="header">
+	<button class="boton" onclick="location='video.html'"><span class="icon-film"></span></button>
+<button class="boton" onclick="location='audio.html'"><span class="icon-music"></span></button>
+	<h1 id="title">SoundFeels</h1>
+
+</div>
+
+<ul id="playlistvid" >
+	<li><a href="assets/media/video/ACDC - Highway To Hell.mp4">ACDC - Highway To Hell</a></li>
+	<li><a href="assets/media/video/Led Zeppelin - Stairway To Heaven.mp4">Led Zeppelin - Stairway To Heaven</a></li>
+	<li><a href="assets/media/video/La Vela Puerca - Llenos de Magia.mp4">La Vela Puerca - Llenos de Magia</a></li>
+	<li><a href="assets/media/video/Once Tiros - Que Seria de Mi.mp4">Once Tiros - Que Seria de Mi</a></li>
+	<li><a href="assets/media/video/Led Zeppelin - Kashmir.mp4">Led Zeppelin - Kashmir</a></li>
+	
+	
+</ul>
+	
+<video id="player">
+	<source src="assets/media/video/ACDC - Highway To Hell.mp4" type="video/mp4">
+</video>
+
+
+<div id="progresscont"><div id="progress"></div></div>
+<div id="footer">
+	<section class="controls"> 
+	<button id="back" class="boton"><span class="icon-backward2"></span></button>
+	<button id="pause" class="boton"><span class="icon-pause"></button>
+	<button id="play" class="boton"><span class="icon-play3"></button>
+	<button id="stop" class="boton"><span class="icon-stop"></button>
+	<button id="forward" class="boton"><span class="icon-forward3"></button>
+	</section>
+	<div id="duracion">
+<span id="initime">0</span> | <span id="endtime">0</span>	
+</div>
+<div id="volumen">
+	<button id="volmin" disabled="true" class="boton"><span class="icon-volume-low"></span></button>
+	<input id="volcontrol" type="range" min="0" max="100" value="100" step="1">
+	<button id="volmax" disabled="true" class="boton"><span class="icon-volume-high"></span></button>
+</div>
+<div id="enlarge">
+<button id="Fullscreen" class="boton"><span class="icon-enlarge"></button>
+</div>
+</div>
+</body>
+</html>

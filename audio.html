@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundFeels</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+	<script src="assets/script.js"></script>
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+
+
+</head>
+<body>
+
+<div id="header">
+<button class="boton" onclick="location='video.html'"><span class="icon-film"></span></button>
+<button class="boton" onclick="location='audio.html'"><span class="icon-music"></span></button>
+	<h1 id="title">SoundFeels</h1>
+
+</div>
+<div id="audioplayer">
+<audio src="assets/media/audio/ACDC - Hells Bells.mp3" ></audio>
+</div>
+
+ 
+
+<ul id="playlist" >
+	<li><a href="assets/media/audio/ACDC - Hells Bells.mp3">ACDC - Hells Bells</a></li>
+	<li><a href="assets/media/audio/Cuarteto de Nos - Cuando Sea Grande.mp3">Cuarteto de Nos - Cuando Sea Grande</a></li>
+	<li><a href="assets/media/audio/Foo Fighters - Run.mp3">Foo Fighters - Run</a></li>
+	<li><a href="assets/media/audio/La Trampa-Caida Libre.mp3">La Trampa - Caida Libre</a></li>
+	<li><a href="assets/media/audio/Soda Stereo - Ella uso Mi Cabeza.mp3">Soda Stereo - Ella uso Mi Cabeza</a></li>
+	<li><a href="assets/media/audio/ACDC- Thunderstruck.mp3">ACDC- Thunderstruck</a></li>
+	<li><a href="assets/media/audio/Foo Fighters - Rope.mp3">Foo Fighters - Rope</a></li>
+	<li><a href="assets/media/audio/La Trampa - El Poeta Dice La Verdad.mp3">La Trampa - El Poeta Dice La Verdad</a></li>
+	<li><a href="assets/media/audio/Nirvana - In Bloom.mp3">Nirvana - In Bloom</a></li>
+	<li><a href="assets/media/audio/Twenty One Pilots  - Stressed Out.mp3">Twenty One Pilots  - Stressed Out</a></li>
+	
+	
+</ul>
+
+<div id="progresscontaudio"><div id="progressaudio"></div></div>
+
+<div id="footer">
+	<section class="controls"> 
+	<button id="backaudio" class="boton"><span class="icon-backward2"></span></button>
+	<button id="pauseaudio" class="boton"><span class="icon-pause"></button>
+	<button id="playaudio" class="boton"><span class="icon-play3"></button>
+	<button id="stopaudio" class="boton"><span class="icon-stop"></button>
+	<button id="forwardaudio" class="boton"><span class="icon-forward3"></button>
+	</section>
+	
+	<div id="duracion">
+<span id="initimeaudio">0</span> | <span id="endtimeaudio">0</span>	
+    </div>
+
+ <div id="volumen">
+	<button id="volmin" disabled="true" class="boton"><span class="icon-volume-low"></span></button>
+	<input id="volcontrolaudio" type="range" min="0" max="100" value="100" step="1">
+	<button id="volmax" disabled="true" class="boton"><span class="icon-volume-high"></span></button>
+ </div>
+</div>
+</body>
+</html>
